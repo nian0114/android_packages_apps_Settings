@@ -808,20 +808,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="SettingsCMLicenseActivity"
-                android:label="@string/settings_cmlicense_activity_title"
-                android:theme="@android:style/Theme.Holo.Panel"
-                android:launchMode="singleTask"
-                android:noHistory="true"
-                android:excludeFromRecents="true"
-                android:configChanges="orientation|screenSize"
-                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
-            <intent-filter>
-                <action android:name="android.settings.CMLICENSE" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
         <activity android:name="SettingsSafetyLegalActivity"
                 android:label="@string/settings_safetylegal_activity_title"
                 android:theme="@*android:style/Theme.Holo.Dialog.Alert"
@@ -1872,8 +1858,6 @@
         <activity android:name=".ApnEditor" />
 
         <activity android:name=".cyanogenmod.ChangeLog" />
-
-        <activity android:name=".cyanogenmod.ContributorsCloud" />
 
         <activity android:name="Settings$LockscreenInterfaceActivity">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
